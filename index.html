@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VoltStore - Premium Electronics Store</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <i class="bi bi-lightning-charge-fill"></i> VoltStore
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="album.html">Album</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="blog.html"><i class="bi bi-journal-text me-2"></i>Blog</a></li>
+              <li><a class="dropdown-item" href="faq.html"><i class="bi bi-question-circle me-2"></i>FAQ</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="privacy.html"><i class="bi bi-shield-check me-2"></i>Privacy Policy</a></li>
+              <li><a class="dropdown-item" href="return-policy.html"><i class="bi bi-arrow-return-left me-2"></i>Return Policy</a></li>
+              <li><a class="dropdown-item" href="terms.html"><i class="bi bi-file-earmark-text me-2"></i>Terms &amp; Conditions</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item ms-lg-3">
+            <a class="btn btn-volt btn-volt-sm" href="portfolio.html">
+              <i class="bi bi-cart3"></i> Shop Now
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========== HERO CAROUSEL ========== -->
+  <section class="hero-carousel">
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=1920&h=1080&fit=crop" alt="Technology">
+          <div class="carousel-caption">
+            <span class="section-badge">New Arrivals 2026</span>
+            <h1>The Future of <span class="gradient-text">Technology</span></h1>
+            <p>Discover the latest in cutting-edge electronics. From powerful laptops to smart devices — everything you need in one place.</p>
+            <div class="d-flex gap-3 flex-wrap">
+              <a href="portfolio.html" class="btn-volt"><i class="bi bi-bag-check"></i> Shop Now</a>
+              <a href="about.html" class="btn-volt-outline"><i class="bi bi-play-circle"></i> Learn More</a>
+            </div>
+          </div>
+        </div>
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <img src="https://images.unsplash.com/photo-1550009158-9ebf69173e03?w=1920&h=1080&fit=crop" alt="Electronics">
+          <div class="carousel-caption">
+            <span class="section-badge">Best Sellers</span>
+            <h1>Premium <span class="gradient-text">Audio</span> Experience</h1>
+            <p>Immerse yourself in crystal-clear sound with our premium headphones and speakers collection.</p>
+            <div class="d-flex gap-3 flex-wrap">
+              <a href="portfolio.html" class="btn-volt"><i class="bi bi-headphones"></i> Explore Audio</a>
+              <a href="services.html" class="btn-volt-outline"><i class="bi bi-stars"></i> Our Services</a>
+            </div>
+          </div>
+        </div>
+        <!-- Slide 3 -->
+        <div class="carousel-item">
+          <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1920&h=1080&fit=crop" alt="Components">
+          <div class="carousel-caption">
+            <span class="section-badge">Up to 40% Off</span>
+            <h1>Smart <span class="gradient-text">Gaming</span> Gear</h1>
+            <p>Level up your gaming setup with high-performance laptops, keyboards, and accessories.</p>
+            <div class="d-flex gap-3 flex-wrap">
+              <a href="portfolio.html" class="btn-volt btn-volt-accent"><i class="bi bi-controller"></i> Shop Gaming</a>
+              <a href="contact.html" class="btn-volt-outline"><i class="bi bi-telephone"></i> Contact Us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- ========== CATEGORIES ========== -->
+  <section class="section">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-badge">Categories</span>
+        <h2 class="section-title">Shop by <span class="gradient-text">Category</span></h2>
+        <p class="section-subtitle">Browse our wide range of electronic categories and find exactly what you need.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-2 col-md-4 col-6">
+          <div class="volt-card category-card">
+            <div class="icon-wrapper">
+              <i class="bi bi-laptop"></i>
+            </div>
+            <h6>Laptops</h6>
+            <small class="text-volt-muted">120+ Products</small>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-6">
+          <div class="volt-card category-card">
+            <div class="icon-wrapper">
+              <i class="bi bi-phone"></i>
+            </div>
+            <h6>Smartphones</h6>
+            <small class="text-volt-muted">85+ Products</small>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-6">
+          <div class="volt-card category-card">
+            <div class="icon-wrapper">
+              <i class="bi bi-headphones"></i>
+            </div>
+            <h6>Headphones</h6>
+            <small class="text-volt-muted">60+ Products</small>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-6">
+          <div class="volt-card category-card">
+            <div class="icon-wrapper">
+              <i class="bi bi-camera"></i>
+            </div>
+            <h6>Cameras</h6>
+            <small class="text-volt-muted">45+ Products</small>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-6">
+          <div class="volt-card category-card">
+            <div class="icon-wrapper">
+              <i class="bi bi-controller"></i>
+            </div>
+            <h6>Gaming</h6>
+            <small class="text-volt-muted">90+ Products</small>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-6">
+          <div class="volt-card category-card">
+            <div class="icon-wrapper">
+              <i class="bi bi-smartwatch"></i>
+            </div>
+            <h6>Wearables</h6>
+            <small class="text-volt-muted">35+ Products</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FEATURED PRODUCTS ========== -->
+  <section class="section section-dark">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-badge">Featured</span>
+        <h2 class="section-title">Best <span class="gradient-text">Selling</span> Products</h2>
+        <p class="section-subtitle">Handpicked top-rated electronics loved by thousands of customers worldwide.</p>
+      </div>
+      <div class="row g-4">
+        <!-- Product 1 -->
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <div class="volt-card product-card">
+            <div class="card-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=600&h=450&fit=crop" alt="MacBook Pro">
+              <span class="card-img-overlay-badge">Hot</span>
+            </div>
+            <div class="card-body">
+              <span class="badge-volt mb-2">Laptops</span>
+              <h5 class="card-title">MacBook Pro M3</h5>
+              <p class="card-text">16-inch Retina Display, Apple M3 Pro chip, 18GB RAM</p>
+              <div class="d-flex align-items-center mt-2">
+                <span class="card-price">$2,499</span>
+                <span class="card-price-old">$2,899</span>
+              </div>
+            </div>
+            <div class="card-footer">
+              <div class="rating">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+                <span class="text-volt-muted ms-1">(4.8)</span>
+              </div>
+              <span class="cart-btn" title="Add to Cart"><i class="bi bi-cart-plus"></i></span>
+            </div>
+          </div>
+        </div>
+        <!-- Product 2 -->
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <div class="volt-card product-card">
+            <div class="card-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&h=450&fit=crop" alt="Headphones">
+              <span class="card-img-overlay-badge">Sale</span>
+            </div>
+            <div class="card-body">
+              <span class="badge-volt mb-2">Audio</span>
+              <h5 class="card-title">Sony WH-1000XM5</h5>
+              <p class="card-text">Premium Noise Cancelling, 30hr Battery, Hi-Res Audio</p>
+              <div class="d-flex align-items-center mt-2">
+                <span class="card-price">$349</span>
+                <span class="card-price-old">$399</span>
+              </div>
+            </div>
+            <div class="card-footer">
+              <div class="rating">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <span class="text-volt-muted ms-1">(5.0)</span>
+              </div>
+              <span class="cart-btn" title="Add to Cart"><i class="bi bi-cart-plus"></i></span>
+            </div>
+          </div>
+        </div>
+        <!-- Product 3 -->
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <div class="volt-card product-card">
+            <div class="card-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600&h=450&fit=crop" alt="Smart Watch">
+              <span class="card-img-overlay-badge">New</span>
+            </div>
+            <div class="card-body">
+              <span class="badge-purple mb-2">Wearables</span>
+              <h5 class="card-title">Apple Watch Ultra 2</h5>
+              <p class="card-text">49mm Titanium Case, GPS + Cellular, Adventure Ready</p>
+              <div class="d-flex align-items-center mt-2">
+                <span class="card-price">$799</span>
+              </div>
+            </div>
+            <div class="card-footer">
+              <div class="rating">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+                <span class="text-volt-muted ms-1">(4.6)</span>
+              </div>
+              <span class="cart-btn" title="Add to Cart"><i class="bi bi-cart-plus"></i></span>
+            </div>
+          </div>
+        </div>
+        <!-- Product 4 -->
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <div class="volt-card product-card">
+            <div class="card-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1585298723682-7115561c51b7?w=600&h=450&fit=crop" alt="Smartphone">
+            </div>
+            <div class="card-body">
+              <span class="badge-accent mb-2">Phones</span>
+              <h5 class="card-title">Samsung Galaxy S25 Ultra</h5>
+              <p class="card-text">6.8" Dynamic AMOLED, 200MP Camera, 5000mAh</p>
+              <div class="d-flex align-items-center mt-2">
+                <span class="card-price">$1,299</span>
+                <span class="card-price-old">$1,399</span>
+              </div>
+            </div>
+            <div class="card-footer">
+              <div class="rating">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+                <span class="text-volt-muted ms-1">(4.7)</span>
+              </div>
+              <span class="cart-btn" title="Add to Cart"><i class="bi bi-cart-plus"></i></span>
+            </div>
+          </div>
+        </div>
+        <!-- Product 5 -->
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <div class="volt-card product-card">
+            <div class="card-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?w=600&h=450&fit=crop" alt="Tablet">
+              <span class="card-img-overlay-badge">Popular</span>
+            </div>
+            <div class="card-body">
+              <span class="badge-volt mb-2">Tablets</span>
+              <h5 class="card-title">iPad Pro M4</h5>
+              <p class="card-text">12.9" Liquid Retina XDR, M4 Chip, 256GB Storage</p>
+              <div class="d-flex align-items-center mt-2">
+                <span class="card-price">$1,099</span>
+              </div>
+            </div>
+            <div class="card-footer">
+              <div class="rating">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <span class="text-volt-muted ms-1">(4.9)</span>
+              </div>
+              <span class="cart-btn" title="Add to Cart"><i class="bi bi-cart-plus"></i></span>
+            </div>
+          </div>
+        </div>
+        <!-- Product 6 -->
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <div class="volt-card product-card">
+            <div class="card-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1546868871-af0de0ae72be?w=600&h=450&fit=crop" alt="Camera">
+            </div>
+            <div class="card-body">
+              <span class="badge-purple mb-2">Cameras</span>
+              <h5 class="card-title">Sony Alpha A7 IV</h5>
+              <p class="card-text">33MP Full-Frame, 4K60 Video, Real-time AF Tracking</p>
+              <div class="d-flex align-items-center mt-2">
+                <span class="card-price">$2,199</span>
+                <span class="card-price-old">$2,499</span>
+              </div>
+            </div>
+            <div class="card-footer">
+              <div class="rating">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+                <span class="text-volt-muted ms-1">(4.5)</span>
+              </div>
+              <span class="cart-btn" title="Add to Cart"><i class="bi bi-cart-plus"></i></span>
+            </div>
+          </div>
+        </div>
+        <!-- Product 7 -->
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <div class="volt-card product-card">
+            <div class="card-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?w=600&h=450&fit=crop" alt="Wireless Headphones">
+              <span class="card-img-overlay-badge">Best Value</span>
+            </div>
+            <div class="card-body">
+              <span class="badge-volt mb-2">Audio</span>
+              <h5 class="card-title">AirPods Max</h5>
+              <p class="card-text">Active Noise Cancellation, Spatial Audio, 20hr Battery</p>
+              <div class="d-flex align-items-center mt-2">
+                <span class="card-price">$549</span>
+              </div>
+            </div>
+            <div class="card-footer">
+              <div class="rating">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+                <span class="text-volt-muted ms-1">(4.7)</span>
+              </div>
+              <span class="cart-btn" title="Add to Cart"><i class="bi bi-cart-plus"></i></span>
+            </div>
+          </div>
+        </div>
+        <!-- Product 8 -->
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <div class="volt-card product-card">
+            <div class="card-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1625961332071-f1673bcbda1b?w=600&h=450&fit=crop" alt="Gaming Setup">
+              <span class="card-img-overlay-badge">Sale</span>
+            </div>
+            <div class="card-body">
+              <span class="badge-accent mb-2">Gaming</span>
+              <h5 class="card-title">ROG Strix G16</h5>
+              <p class="card-text">Intel i9, RTX 4070, 16" 240Hz, 32GB DDR5 RAM</p>
+              <div class="d-flex align-items-center mt-2">
+                <span class="card-price">$1,899</span>
+                <span class="card-price-old">$2,199</span>
+              </div>
+            </div>
+            <div class="card-footer">
+              <div class="rating">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <span class="text-volt-muted ms-1">(4.9)</span>
+              </div>
+              <span class="cart-btn" title="Add to Cart"><i class="bi bi-cart-plus"></i></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-5">
+        <a href="portfolio.html" class="btn-volt-outline"><i class="bi bi-grid-3x3-gap"></i> View All Products</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== WHY CHOOSE US ========== -->
+  <section class="section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-5 mb-5 mb-lg-0">
+          <span class="section-badge">Why VoltStore</span>
+          <h2 class="section-title">Why Choose <span class="gradient-text">Us?</span></h2>
+          <p class="text-volt-muted mb-4">We're not just another electronics store. We're your trusted partner in technology, delivering quality products and exceptional service since 2018.</p>
+          <a href="about.html" class="btn-volt"><i class="bi bi-arrow-right"></i> Learn More About Us</a>
+        </div>
+        <div class="col-lg-7">
+          <div class="row g-3">
+            <div class="col-md-6">
+              <div class="feature-item">
+                <div class="feature-icon">
+                  <i class="bi bi-truck"></i>
+                </div>
+                <div>
+                  <h5>Free Shipping</h5>
+                  <p>Free delivery on all orders over $50 worldwide</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="feature-item">
+                <div class="feature-icon">
+                  <i class="bi bi-shield-check"></i>
+                </div>
+                <div>
+                  <h5>2-Year Warranty</h5>
+                  <p>Extended warranty on all electronic products</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="feature-item">
+                <div class="feature-icon">
+                  <i class="bi bi-headset"></i>
+                </div>
+                <div>
+                  <h5>24/7 Support</h5>
+                  <p>Expert tech support available round the clock</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="feature-item">
+                <div class="feature-icon">
+                  <i class="bi bi-arrow-return-left"></i>
+                </div>
+                <div>
+                  <h5>Easy Returns</h5>
+                  <p>30-day hassle-free return and exchange policy</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="feature-item">
+                <div class="feature-icon">
+                  <i class="bi bi-lock"></i>
+                </div>
+                <div>
+                  <h5>Secure Payment</h5>
+                  <p>100% secure payment with SSL encryption</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="feature-item">
+                <div class="feature-icon">
+                  <i class="bi bi-patch-check"></i>
+                </div>
+                <div>
+                  <h5>Genuine Products</h5>
+                  <p>100% authentic products from official brands</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== DEAL BANNER ========== -->
+  <section class="section section-glass py-0">
+    <div class="container py-5">
+      <div class="cta-banner" style="background-image: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=1400&h=600&fit=crop'); background-size: cover; background-position: center;">
+        <div style="position: relative; z-index: 1;">
+          <span class="section-badge">Limited Offer</span>
+          <h2>Mega <span class="gradient-text">Sale</span> — Up to 40% Off</h2>
+          <p>Don't miss out on our biggest sale of the year! Premium electronics at unbeatable prices.</p>
+          <a href="portfolio.html" class="btn-volt btn-volt-accent"><i class="bi bi-fire"></i> Shop the Sale</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TESTIMONIALS ========== -->
+  <section class="section section-dark">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-badge">Testimonials</span>
+        <h2 class="section-title">What Our <span class="gradient-text">Customers</span> Say</h2>
+        <p class="section-subtitle">Trusted by over 50,000 happy customers worldwide.</p>
+      </div>
+      <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <div class="testimonial-card">
+                  <div class="quote-icon"><i class="bi bi-quote"></i></div>
+                  <p class="testimonial-text">"VoltStore exceeded my expectations! The MacBook Pro I ordered arrived in perfect condition with lightning-fast shipping. Their customer service is outstanding — truly the best electronics store online."</p>
+                  <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=120&h=120&fit=crop&crop=face" alt="Customer" class="client-img">
+                  <h6 class="client-name">Ahmad Al-Rashid</h6>
+                  <span class="client-role">Software Engineer</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <div class="testimonial-card">
+                  <div class="quote-icon"><i class="bi bi-quote"></i></div>
+                  <p class="testimonial-text">"I've been a loyal customer for 3 years now. The product quality is exceptional, prices are competitive, and the 2-year warranty gives me complete peace of mind. Highly recommended!"</p>
+                  <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=120&h=120&fit=crop&crop=face" alt="Customer" class="client-img">
+                  <h6 class="client-name">Sarah Mitchell</h6>
+                  <span class="client-role">Graphic Designer</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <div class="testimonial-card">
+                  <div class="quote-icon"><i class="bi bi-quote"></i></div>
+                  <p class="testimonial-text">"The gaming laptop I purchased from VoltStore performs flawlessly. The setup was easy, the specs matched perfectly, and the price was unbeatable. Will definitely purchase again!"</p>
+                  <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=120&h=120&fit=crop&crop=face" alt="Customer" class="client-img">
+                  <h6 class="client-name">Omar Hassan</h6>
+                  <span class="client-role">Professional Gamer</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== NEWSLETTER ========== -->
+  <section class="newsletter-section">
+    <div class="container">
+      <div class="row align-items-center justify-content-center text-center">
+        <div class="col-lg-8">
+          <h2>Stay in the <strong>Loop</strong></h2>
+          <p class="mb-4">Subscribe to get exclusive deals, new product alerts, and tech news delivered to your inbox.</p>
+          <form class="newsletter-form d-flex flex-column flex-sm-row gap-3 justify-content-center">
+            <input type="email" class="form-control" placeholder="Enter your email address" style="max-width: 400px;">
+            <button type="submit" class="btn"><i class="bi bi-send me-2"></i>Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-logo">
+            <i class="bi bi-lightning-charge-fill"></i> VoltStore
+          </div>
+          <p class="footer-desc">Your premium destination for cutting-edge electronics. We bring you the latest technology with exceptional service and unbeatable prices.</p>
+          <div class="footer-social">
+            <a href="#" title="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" title="Twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" title="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" title="YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="#" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <h5>Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Products</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <h5>Categories</h5>
+          <ul class="footer-links">
+            <li><a href="portfolio.html">Laptops</a></li>
+            <li><a href="portfolio.html">Smartphones</a></li>
+            <li><a href="portfolio.html">Headphones</a></li>
+            <li><a href="portfolio.html">Cameras</a></li>
+            <li><a href="portfolio.html">Gaming</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <h5>Support</h5>
+          <ul class="footer-links">
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="return-policy.html">Return Policy</a></li>
+            <li><a href="terms.html">Terms &amp; Conditions</a></li>
+            <li><a href="blog.html">Blog</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <h5>Contact Info</h5>
+          <ul class="footer-links">
+            <li><a href="tel:+962791234567"><i class="bi bi-telephone"></i> +962 79 123 4567</a></li>
+            <li><a href="mailto:info@voltstore.com"><i class="bi bi-envelope"></i> info@voltstore.com</a></li>
+            <li><a href="contact.html"><i class="bi bi-geo-alt"></i> Amman, Jordan</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 VoltStore. All Rights Reserved. Designed with <i class="bi bi-heart-fill text-volt-accent"></i> by VoltStore Team.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

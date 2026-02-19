@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog - VoltStore</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><i class="bi bi-lightning-charge-fill"></i> VoltStore</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="album.html">Album</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Pages</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item active" href="blog.html"><i class="bi bi-journal-text me-2"></i>Blog</a></li>
+              <li><a class="dropdown-item" href="faq.html"><i class="bi bi-question-circle me-2"></i>FAQ</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="privacy.html"><i class="bi bi-shield-check me-2"></i>Privacy Policy</a></li>
+              <li><a class="dropdown-item" href="return-policy.html"><i class="bi bi-arrow-return-left me-2"></i>Return Policy</a></li>
+              <li><a class="dropdown-item" href="terms.html"><i class="bi bi-file-earmark-text me-2"></i>Terms &amp; Conditions</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item ms-lg-3"><a class="btn btn-volt btn-volt-sm" href="portfolio.html"><i class="bi bi-cart3"></i> Shop Now</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <section class="page-header">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="container">
+      <span class="section-badge">Blog</span>
+      <h1>Tech <span class="gradient-text">Insights</span></h1>
+      <p>Stay updated with the latest technology news, reviews, and tips from our experts.</p>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Blog</li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+
+  <!-- FEATURED POST -->
+  <section class="section">
+    <div class="container">
+      <div class="row align-items-center g-5 mb-5">
+        <div class="col-lg-7">
+          <div class="gallery-item" style="height:400px; border-radius:var(--border-radius);">
+            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=900&h=400&fit=crop" alt="Featured Post">
+            <div class="gallery-overlay">
+              <div>
+                <h5>Featured Article</h5>
+                <p>The ultimate guide to building your tech setup in 2026</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <span class="badge-volt mb-2">Featured</span>
+          <h2 class="mt-2 mb-3">The Ultimate Guide to Building Your Dream Tech Setup in 2026</h2>
+          <div class="blog-meta d-flex gap-3 mb-3">
+            <span class="text-volt-muted"><i class="bi bi-calendar3 text-volt-primary me-1"></i> Feb 10, 2026</span>
+            <span class="text-volt-muted"><i class="bi bi-person text-volt-primary me-1"></i> Khalid Al-Nasser</span>
+          </div>
+          <p class="text-volt-muted">Whether you're a remote worker, content creator, or gaming enthusiast, building the perfect tech setup is essential. In this comprehensive guide, we cover everything from choosing the right monitor to organizing your cables for a clean, productive workspace...</p>
+          <a href="#" class="btn-volt btn-volt-sm mt-2"><i class="bi bi-book"></i> Read Full Article</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOG GRID -->
+  <section class="section section-dark">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-badge">Latest Posts</span>
+        <h2 class="section-title">Recent <span class="gradient-text">Articles</span></h2>
+        <p class="section-subtitle">Expert insights, product reviews, and tech tips from the VoltStore team.</p>
+      </div>
+      <div class="row g-4">
+        <!-- Post 1 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="volt-card blog-card">
+            <div class="card-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=600&h=400&fit=crop" alt="Blog Post">
+              <span class="card-img-overlay-badge">Laptops</span>
+            </div>
+            <div class="card-body">
+              <div class="blog-meta">
+                <span><i class="bi bi-calendar3"></i> Jan 28, 2026</span>
+                <span><i class="bi bi-clock"></i> 8 min read</span>
+              </div>
+              <h5 class="card-title"><a href="#">MacBook Pro M3 vs Dell XPS 15: Which One Should You Buy?</a></h5>
+              <p class="card-text">An in-depth comparison of two of the best laptops on the market, covering performance, display, battery life, and value for money.</p>
+              <a href="#" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- Post 2 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="volt-card blog-card">
+            <div class="card-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&h=400&fit=crop" alt="Blog Post">
+              <span class="card-img-overlay-badge">Audio</span>
+            </div>
+            <div class="card-body">
+              <div class="blog-meta">
+                <span><i class="bi bi-calendar3"></i> Jan 22, 2026</span>
+                <span><i class="bi bi-clock"></i> 6 min read</span>
+              </div>
+              <h5 class="card-title"><a href="#">Top 10 Noise-Cancelling Headphones for 2026</a></h5>
+              <p class="card-text">We tested the best ANC headphones available today. From Sony to Bose to Apple — here's our definitive ranking and review.</p>
+              <a href="#" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- Post 3 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="volt-card blog-card">
+            <div class="card-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=600&h=400&fit=crop" alt="Blog Post">
+              <span class="card-img-overlay-badge">Gaming</span>
+            </div>
+            <div class="card-body">
+              <div class="blog-meta">
+                <span><i class="bi bi-calendar3"></i> Jan 15, 2026</span>
+                <span><i class="bi bi-clock"></i> 10 min read</span>
+              </div>
+              <h5 class="card-title"><a href="#">Building a Budget Gaming Setup Under $1,500</a></h5>
+              <p class="card-text">You don't need to break the bank for a solid gaming rig. Here's how to build a competitive setup that delivers great performance.</p>
+              <a href="#" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- Post 4 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="volt-card blog-card">
+            <div class="card-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1585298723682-7115561c51b7?w=600&h=400&fit=crop" alt="Blog Post">
+              <span class="card-img-overlay-badge">Phones</span>
+            </div>
+            <div class="card-body">
+              <div class="blog-meta">
+                <span><i class="bi bi-calendar3"></i> Jan 8, 2026</span>
+                <span><i class="bi bi-clock"></i> 7 min read</span>
+              </div>
+              <h5 class="card-title"><a href="#">Samsung Galaxy S25 Ultra: Everything You Need to Know</a></h5>
+              <p class="card-text">Samsung's latest flagship is here. We break down the new features, camera improvements, and whether it's worth the upgrade.</p>
+              <a href="#" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- Post 5 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="volt-card blog-card">
+            <div class="card-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1498049794561-7780e7231661?w=600&h=400&fit=crop" alt="Blog Post">
+              <span class="card-img-overlay-badge">Tips</span>
+            </div>
+            <div class="card-body">
+              <div class="blog-meta">
+                <span><i class="bi bi-calendar3"></i> Dec 29, 2025</span>
+                <span><i class="bi bi-clock"></i> 5 min read</span>
+              </div>
+              <h5 class="card-title"><a href="#">5 Essential Tips to Extend Your Laptop's Battery Life</a></h5>
+              <p class="card-text">Is your laptop dying too fast? These proven tips will help you squeeze more hours out of every charge.</p>
+              <a href="#" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- Post 6 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="volt-card blog-card">
+            <div class="card-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1546868871-af0de0ae72be?w=600&h=400&fit=crop" alt="Blog Post">
+              <span class="card-img-overlay-badge">Cameras</span>
+            </div>
+            <div class="card-body">
+              <div class="blog-meta">
+                <span><i class="bi bi-calendar3"></i> Dec 20, 2025</span>
+                <span><i class="bi bi-clock"></i> 9 min read</span>
+              </div>
+              <h5 class="card-title"><a href="#">Beginner's Guide to Mirrorless Photography in 2026</a></h5>
+              <p class="card-text">Thinking about switching to mirrorless? This guide covers everything from choosing your first camera to mastering the basics.</p>
+              <a href="#" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SIDEBAR / CATEGORIES -->
+  <section class="section">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="volt-card" style="padding:2rem;">
+            <h5 class="mb-3"><i class="bi bi-bookmark text-volt-primary me-2"></i>Categories</h5>
+            <ul class="list-unstyled">
+              <li class="py-2 border-bottom border-dark d-flex justify-content-between">
+                <a href="#" class="text-volt-muted">Laptops &amp; Computers</a>
+                <span class="badge-volt" style="font-size:0.7rem;">12</span>
+              </li>
+              <li class="py-2 border-bottom border-dark d-flex justify-content-between">
+                <a href="#" class="text-volt-muted">Smartphones &amp; Tablets</a>
+                <span class="badge-volt" style="font-size:0.7rem;">9</span>
+              </li>
+              <li class="py-2 border-bottom border-dark d-flex justify-content-between">
+                <a href="#" class="text-volt-muted">Audio &amp; Headphones</a>
+                <span class="badge-volt" style="font-size:0.7rem;">7</span>
+              </li>
+              <li class="py-2 border-bottom border-dark d-flex justify-content-between">
+                <a href="#" class="text-volt-muted">Gaming</a>
+                <span class="badge-volt" style="font-size:0.7rem;">11</span>
+              </li>
+              <li class="py-2 border-bottom border-dark d-flex justify-content-between">
+                <a href="#" class="text-volt-muted">Cameras &amp; Photography</a>
+                <span class="badge-volt" style="font-size:0.7rem;">5</span>
+              </li>
+              <li class="py-2 d-flex justify-content-between">
+                <a href="#" class="text-volt-muted">Tips &amp; Guides</a>
+                <span class="badge-volt" style="font-size:0.7rem;">8</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="volt-card" style="padding:2rem;">
+            <h5 class="mb-3"><i class="bi bi-tags text-volt-primary me-2"></i>Popular Tags</h5>
+            <div class="d-flex flex-wrap gap-2">
+              <span class="badge-volt">MacBook</span>
+              <span class="badge-accent">iPhone</span>
+              <span class="badge-purple">Gaming</span>
+              <span class="badge-volt">Headphones</span>
+              <span class="badge-accent">Samsung</span>
+              <span class="badge-purple">Camera</span>
+              <span class="badge-volt">Wireless</span>
+              <span class="badge-accent">Review</span>
+              <span class="badge-purple">Guide</span>
+              <span class="badge-volt">Deals</span>
+              <span class="badge-accent">Setup</span>
+              <span class="badge-purple">Tech News</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="volt-card" style="padding:2rem;">
+            <h5 class="mb-3"><i class="bi bi-envelope text-volt-primary me-2"></i>Newsletter</h5>
+            <p class="text-volt-muted small">Subscribe to get the latest blog posts and tech news delivered to your inbox weekly.</p>
+            <form class="volt-form">
+              <div class="mb-3">
+                <input type="email" class="form-control" placeholder="Your email address">
+              </div>
+              <button type="submit" class="btn-volt btn-volt-sm w-100 justify-content-center">
+                <i class="bi bi-send"></i> Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-logo"><i class="bi bi-lightning-charge-fill"></i> VoltStore</div>
+          <p class="footer-desc">Your premium destination for cutting-edge electronics.</p>
+          <div class="footer-social"><a href="#"><i class="bi bi-facebook"></i></a><a href="#"><i class="bi bi-twitter-x"></i></a><a href="#"><i class="bi bi-instagram"></i></a><a href="#"><i class="bi bi-youtube"></i></a></div>
+        </div>
+        <div class="col-lg-2 col-md-6"><h5>Quick Links</h5><ul class="footer-links"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="portfolio.html">Products</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+        <div class="col-lg-2 col-md-6"><h5>Categories</h5><ul class="footer-links"><li><a href="portfolio.html">Laptops</a></li><li><a href="portfolio.html">Smartphones</a></li><li><a href="portfolio.html">Headphones</a></li><li><a href="portfolio.html">Cameras</a></li></ul></div>
+        <div class="col-lg-2 col-md-6"><h5>Support</h5><ul class="footer-links"><li><a href="faq.html">FAQ</a></li><li><a href="privacy.html">Privacy Policy</a></li><li><a href="return-policy.html">Return Policy</a></li><li><a href="terms.html">Terms</a></li></ul></div>
+        <div class="col-lg-2 col-md-6"><h5>Contact</h5><ul class="footer-links"><li><a href="tel:+962791234567"><i class="bi bi-telephone"></i> +962 79 123 4567</a></li><li><a href="mailto:info@voltstore.com"><i class="bi bi-envelope"></i> info@voltstore.com</a></li></ul></div>
+      </div>
+      <div class="footer-bottom"><p>&copy; 2026 VoltStore. All Rights Reserved.</p></div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
